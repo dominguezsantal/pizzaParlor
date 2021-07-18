@@ -1,3 +1,76 @@
+# PizzBlum Website
+
+#### Website, November 2021
+
+#### By Alex Dominguez
+
+## Description
+
+Website about pizza generator were the user orders pizza according to specific toppings, size, etc.HTML/CSS/Javascript.
+
+## Setup/Installation Requirements
+
+* None_
+## Known Bugs
+
+### Github pages
+
+https://github.com/dominguezsantal/pizzaParlor/githubio
+
+### Installation
+-Installation
+
+_1. Clone this repository to your desktop.
+
+_2. Navigate to the top level of the directory
+
+-3. 3. Open index.html in your browser
+
+_To Clone Project, follow the instructions as guidelined here: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository.
+
+_Forking, follow the instructions as guidelined here: https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo
+
+
+
+
+
+
+
+## Technologies Used
+
+JS,HTML and CSS
+
+### License
+MIT License
+
+Copyright (c) 2021 Alex Dominguez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Copyright (c) 2018 **_AlexPage_**
+
+
+
+
+
+
 //Adding main features
 Test 1
 Describe: Add a constructor for pizza form
