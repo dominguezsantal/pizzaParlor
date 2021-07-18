@@ -1,3 +1,4 @@
+//Adding main features
 Test 1
 Describe: Add a constructor for pizza form
 Code : function Pizza(parameter1, parameter2,parameter3,parameter4){ } 
@@ -32,6 +33,7 @@ Describe: output calculateSizeCost and calculateMeatCost into showCost
 Code : let showCost = selectedPizza.calculateSizeCost()+ selectedPizza.calculateMeatCost();
 Expected Output: size + meat cost.
 
+//debbuging tests
 Test 7
 Describe: debug size and meat cost
 Code : let showCost = selectedPizza.calculateSizeCost()+ selectedPizza.calculateMeatCost();
@@ -42,5 +44,12 @@ Describe: debug calculateSizeCost, calculateMeatCost and calculateCheeseCost int
 Code : let showCost = selectedPizza.calculateSizeCost()+ selectedPizza.calculateMeatCost()+ calculateCheeseCost();
 
 Expected Output: size + meat + cheese cost.
+
+Test 9
+Describe: showCost is displaying incorrectly. Even when form is refreshed, it's adding result of previous form's choices into new. 
+Solution: After this.size, make everything else an array into the constructor and ui to referenced it(?)
+Code :meatArray = [];
+
+Expected Output: correct size + meat + cheese cost.
 
 

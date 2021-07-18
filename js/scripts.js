@@ -1,11 +1,11 @@
 //Business Logic
 //constructor or object's blueprint of pizza form
-function Pizza(size, meat, cheese, toppings, sauce) {
+function Pizza(size, meat, cheese) {
     this.size = size;
     this.meat = meat;
     this.cheese = cheese;
-    this.toppings = toppings;
-    this.sauce = sauce;
+    //this.toppings = toppings;
+    //this.sauce = sauce;
     this.cost = 0;
 }
 
@@ -31,11 +31,11 @@ Pizza.prototype.calculateMeatCost = function() {
             this.cost = 2;
         } else if (this.meat === "bacon") {
             this.cost = 2;
-        } else if (this.size === "pepperoni") {
+        } else if (this.meat === "pepperoni") {
             this.cost = 2;
-        } else if (this.size === "salmon") {
+        } else if (this.meat === "salmon") {
             this.cost = 4;
-        } else if (this.size === "steak") {
+        } else if (this.meat === "steak") {
             this.cost = 5;
         }
         return this.cost;
@@ -46,10 +46,10 @@ Pizza.prototype.calculateCheeseCost = function() {
             this.cost = 1;
         } else if (this.cheese === "harvati") {
             this.cost = 1;
-        } else if (this.size === "provolone") {
+        } else if (this.cheese === "provolone") {
             this.cost = 1;
-        } else if (this.size === "american") {
-            this.cost = 4;
+        } else if (this.cheese === "american") {
+            this.cost = 1;
         }
         return this.cost;
     }
