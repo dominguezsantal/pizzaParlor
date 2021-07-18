@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         //final cost of pizza(s)
         selectedPizza.calculateSizeCost();
-
+        console.log(selectedPizza);
         $("#final-cost").show();
     });
 });
