@@ -4,7 +4,7 @@ function Pizza(size, meat, cheese) {
     this.size = size;
     this.meat = meat;
     this.cheese = cheese;
-    //this.toppings = toppings;
+    this.toppings = toppings;
     //this.sauce = sauce;
     this.cost = 0;
 }
@@ -42,18 +42,35 @@ Pizza.prototype.calculateMeatCost = function() {
     }
     //cheese cost
 Pizza.prototype.calculateCheeseCost = function() {
-        if (this.cheese === "mozarella") {
-            this.cost = 1;
-        } else if (this.cheese === "harvati") {
-            this.cost = 1;
-        } else if (this.cheese === "provolone") {
-            this.cost = 1;
-        } else if (this.cheese === "american") {
-            this.cost = 1;
-        }
-        return this.cost;
+    if (this.cheese === "mozarella") {
+        this.cost = 1;
+    } else if (this.cheese === "harvati") {
+        this.cost = 1;
+    } else if (this.cheese === "provolone") {
+        this.cost = 1;
+    } else if (this.cheese === "american") {
+        this.cost = 1;
     }
-    //
+    return this.cost;
+}
+Pizza.prototype.calculateToppingsCost = function() {
+    if (this.toppings === "tomatoes") {
+        this.cost = 1;
+    } else if (this.toppings === "bellPepper") {
+        this.cost = 1;
+    } else if (this.toppings === "onions") {
+        this.cost = 1;
+    } else if (this.toppings === "blackOlives") {
+        this.cost = 1;
+    } else if (this.toppings === "broccoli") {
+        this.cost = 1;
+    } else if (this.toppings === "pineapple") {
+        this.cost = 1;
+    }
+    return this.cost;
+}
+
+//
 
 
 
@@ -68,13 +85,13 @@ $(document).ready(function() {
         let size = $("input:radio[name='size']:checked").val();
         let meat = $("input:checkbox[name='meat']:checked").val();
         let cheese = $("input:checkbox[name='cheese']:checked").val();
-
+        let toppings = $("input:checkbox[name='cheese']:checked").val();
 
         //obj for customer's pizza choice
-        let selectedPizza = new Pizza(size, meat, cheese);
+        let selectedPizza = new Pizza(size, meat, cheese, toppings);
 
         //final cost of pizza(s)
-        let showCost = selectedPizza.calculateSizeCost() + selectedPizza.calculateMeatCost() + selectedPizza.calculateCheeseCost();
+        let showCost = selectedPizza.calculateSizeCost() + selectedPizza.calculateMeatCost() + selectedPizza.calculateCheeseCost() + selectedPizza.calculateToppingsCost();
 
 
         //let showCost = selectedPizza.cost;
