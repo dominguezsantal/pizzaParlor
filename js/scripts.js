@@ -40,25 +40,26 @@ Pizza.prototype.calculateMeatCost = function() {
         }
         return this.cost;
     }
-    //    //cheese cost
-    //Pizza.prototype.calculateCheese = function() {
-    //    if (this.cheese === "mozarella") {
-    //        this.cost = this.cost + 1;
-    //    } else if (this.cheese === "harvati") {
-    //        this.cost = this.cost + 1;
-    //    } else if (this.size === "provolone") {
-    //        this.cost = this.cost + 1;
-    //    } else if (this.size === "american") {
-    //        this.cost = this.cost + 4;
-    //    }
-    //}//
+    //cheese cost
+Pizza.prototype.calculateCheeseCost = function() {
+        if (this.cheese === "mozarella") {
+            this.cost = 1;
+        } else if (this.cheese === "harvati") {
+            this.cost = 1;
+        } else if (this.size === "provolone") {
+            this.cost = 1;
+        } else if (this.size === "american") {
+            this.cost = 4;
+        }
+        return this.cost;
+    }
     //
-    //
-    //
-    //
-    //
-    //
-    //
+
+
+
+
+
+
 
 //User Interface
 $(document).ready(function() {
@@ -66,14 +67,14 @@ $(document).ready(function() {
         event.preventDefault();
         let size = $("input:radio[name='size']:checked").val();
         let meat = $("input:checkbox[name='meat']:checked").val();
-        // let cheese = $("input:checkbox[name='cheese']:checked").val();
+        let cheese = $("input:checkbox[name='cheese']:checked").val();
 
 
         //obj for customer's pizza choice
-        let selectedPizza = new Pizza(size, meat);
+        let selectedPizza = new Pizza(size, meat, cheese);
 
         //final cost of pizza(s)
-        let showCost = selectedPizza.calculateSizeCost() + selectedPizza.calculateMeatCost();
+        let showCost = selectedPizza.calculateSizeCost() + selectedPizza.calculateMeatCost() + selectedPizza.calculateCheeseCost();
 
 
         //let showCost = selectedPizza.cost;
