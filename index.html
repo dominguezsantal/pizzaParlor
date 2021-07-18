@@ -16,6 +16,7 @@
         <form id="pizza-form">
             <div class="row">
                 <div class="col-md-6">
+                    <!--Pizza size radio button -->
                     <h3>Let's start what size of pizza you want?</h2>
                         <div class="radio">
                             <label><input type="radio" name="size" value="small"> Thor Small $6</label>
@@ -35,12 +36,12 @@
                 <h3>Toppings</h3>
                 <h4>Let's choose your toppings:</h4>
                 <div class="col-md-4">
+                    <!--Meat and cheese checkbox buttons -->
                     <h4>Meat Options:</h4>
                     <div class="form-group">
                         <div class="checkbox">
                             <label><input type="checkbox" id="meat" name="meat" value="chicken">Chicken($2)</label><br>
                         </div>
-
                         <input type="checkbox" id="meat" name="meat" value="bacon">
                         <label for="meat">Bacon($2)</label><br>
                         <input type="checkbox" id="meat" name="meat" value="pepperoni">
@@ -68,6 +69,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
+                        <!--Toppings and sauce -->
                         <h4>Toppings Options:</h4>
                         <input type="checkbox" id="toppings" name="toppings" value="tomatoes">
                         <label for="toppings">Tomatoes($1)</label><br>
@@ -82,7 +84,16 @@
                         <input type="checkbox" id="toppings" name="toppings" value="pineapple">
                         <label for="toppings">Pineapple($1)</label><br>
                     </div>
-
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <h4>Sauce Options:</h4>
+                        <input type="checkbox" id="sauce" name="sauce" value="tomato-sauce">
+                        <label for="sauce">Tomato Sauce($0.10)</label><br>
+                        <input type="checkbox" id="sauce" name="sauce" value="alfredo-sauce">
+                        <label for="sauce">Alfredo Sauce($0.10)</label><br>
+                    </div>
+                    <!--Result cost -->
                     <button id="submit" button class="btn btn-warning" type="submit">Submit your order</button>
                     <div id="final-cost">
                         <p><b>Your total is:</b>$<em id="show-cost"></em></p>
