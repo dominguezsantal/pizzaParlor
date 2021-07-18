@@ -5,7 +5,6 @@ function Pizza(size, meat, cheese) {
     this.meat = meat;
     this.cheese = cheese;
     this.toppings = toppings;
-    //this.sauce = sauce;
     this.cost = 0;
 }
 
@@ -70,17 +69,10 @@ Pizza.prototype.calculateToppingsCost = function() {
     return this.cost;
 }
 
-//
-
-
-
-
-
-
 
 //User Interface
 $(document).ready(function() {
-    $("#pizza-form").submit(function(event) {
+    $("form#pizza-form").submit(function(event) {
         event.preventDefault();
         let size = $("input:radio[name='size']:checked").val();
         let meat = $("input:checkbox[name='meat']:checked").val();
@@ -98,7 +90,8 @@ $(document).ready(function() {
 
 
         $("#finalCost").show();
+        $("#showCost").show();
         $("#finalCost").text(showCost);
-        console.log(showCost);
+        //console.log(showCost);
     });
 });
