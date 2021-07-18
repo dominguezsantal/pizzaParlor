@@ -8,10 +8,16 @@ function Pizza(size, meat, cheese, toppings, sauce) {
     this.sauce = sauce;
 }
 
-
-
-
-
-
-
 //User Interface
+$(document).ready(function() {
+    $("#pizza-form").submit(function(event) {
+        event.preventDefault();
+        let size = $("input:radio[name='size']:checked").val();
+        let selectedPizza = new Pizza(size);
+
+        //
+        selectedPizza.calculatePrice();
+
+        $("#final-cost").show();
+    });
+});
