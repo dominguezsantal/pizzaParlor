@@ -43,6 +43,25 @@ for (var i = 0; i < this.toppings.length; i++) {
             //let meat = $("input:checkbox[name='meat']:checked").val();
             //let cheese = $("input:checkbox[name='cheese']:checked").val();
             //let toppings = $("input:checkbox[name='cheese']:checked").val();
+            var meatUser = [];
+            $.each($("input:checkbox[name='meat']:checked"),
+                function() {
+                    meatUser.push($(this).val());
+
+                });
+            var cheeseUser = [];
+            $.each($("input:checkbox[name='cheese']:checked"),
+                function() {
+                    cheeseUser.push($(this).val());
+
+                });
+            var toppingsUser = [];
+            $.each($("input:checkbox[name='toppings']:checked"),
+                function() {
+                    toppingsUser.push($(this).val());
+
+                });
+
 
 
 
@@ -50,10 +69,7 @@ for (var i = 0; i < this.toppings.length; i++) {
             let selectedPizza = new Pizza(size, meat, cheese, toppings);
 
             //final cost of pizza(s)
-            selectedPizza.calculateSizeCost();
-            selectedPizza.calculateMeatCost();
-            selectedPizza.calculateCheeseCost();
-            selectedPizza.calculateToppingsCost();
+
 
             console.log(selectedPizza);
             //let showCost = selectedPizza.cost;
