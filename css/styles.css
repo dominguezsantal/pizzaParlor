@@ -1,0 +1,15 @@
+body {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/564x/f8/9b/bb/f89bbb75b13fb16b0597ddfe12f82083.jpg");
+    height: 1000px;
+}
+
+.container {
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: medium;
+    color: white;
+}
