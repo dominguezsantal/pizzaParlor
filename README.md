@@ -1,4 +1,4 @@
-# PizzBlum Website
+# PizzaBlum Website
 
 #### Website, November 2021
 
